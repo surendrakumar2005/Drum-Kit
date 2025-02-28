@@ -42,4 +42,4 @@ function makesound(key){
             console.log(this.textContent);
             break;
     }
-   setTimeout( function(){document.querySelector('.'+key).classList.remove("pressed")},100);
+   setTimeout( function(){document.querySelector('.'+key).classList.remove("pressed")},100);}
