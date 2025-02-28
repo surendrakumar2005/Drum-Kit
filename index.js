@@ -9,6 +9,8 @@ document.addEventListener("keydown",function (kill){
 
 
 function makesound(key){
+    document.querySelector('.'+key).classList.add("pressed");
+
     switch (key) {
         case 'w':
             
@@ -40,4 +42,4 @@ function makesound(key){
             console.log(this.textContent);
             break;
     }
-}
+   setTimeout( function(){document.querySelector('.'+key).classList.remove("pressed")},100);
